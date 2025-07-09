@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  <link rel="stylesheet" href="./style/style.css">
+
+</head>
+<body>
+
+  <div class="contenedor-general">
+
+    <form class="contenedor-izquierda">
+
+      <div class="contenedor-primero">
+
+        <p class="titulo-principal">Calculadora De Hipotecas</p>
+        <button type="reset" class="limpiar">Borrar Todo</button>
+
+      </div>
+
+      <div class="contenedor-segundo">
+
+        <label for="ingCant">Monto De La Hipoteca</label>
+        <input id="ingCant" class="input-primero" type="number" required>
+
+      </div>
+
+      <div class="contenedor-tercero">
+
+        <div class="contenedor-sub-izquierdo">
+
+          <label for="ingAño">Plazo De La Hipoteca</label>
+          <input id="ingAño" class="input-segundo" type="number" required>
+
+        </div>
+
+        <div class="contenedor-sub-derecho">
+
+          <label for="ingTasa">Tasa De Interés</label>
+          <input id="ingTasa" class="input-tercero" type="number" required>
+
+        </div>
+
+      </div>
+
+      <div class="contenedor-cuarto">
+
+        <p class="titulo-cuarto-contenedor">Tipo De Hipoteca</p>
+
+        <label class="contenedor-input-radio-uno">
+          <input class="input-radio-uno" type="radio" name="seleccion" required>
+          Reembolso
+        </label>
+
+        <label class="contenedor-input-radio-dos">
+          <input class="input-radio-dos" type="radio" name="seleccion" required>
+          Sólo Interés
+        </label>
+
+      </div>
+
+      <button class="contenedor-quinto">Calcular Reembolsos</button>
+
+    </form>
+
+    <div class="contenedor-derecha">
+
+      <div class="contenedor-resultado">
+
+        <p class="titulo-derecha">Tu resultado</p>
+
+        <div class="contenedor-primer-resultado">
+
+          <p class="texto-primer-resultado">Sus pagos mensuales</p>
+
+          <p class="primer-resultado">$<span id="resultadoUno" class="resultado-uno">0</span></p>
+
+        </div>
+
+        <div class="contenedor-segundo-resultado">
+
+          <p class="texto-segundo-resultado">Total que reembolsarás durante el plazo</p>
+
+          <p class="segundo-resultado">$<span id="resultadoDos" class="resultado-dos">0</span></p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="./JS/script.js"></script>
+
+</body>
+</html>
